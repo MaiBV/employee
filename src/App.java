@@ -39,10 +39,12 @@ public class App {
         
         System.out.println();
         System.out.println("PAYMENTS:");
-        double sum = 0.0;
+        
         for (Employee emp : list) {
+            double sum = 0.0;
             System.out.println(emp.getName() + " - $ " + String.format("%.2f", emp.payment()));
             sum += emp.payment();
+            System.out.println("Total payment: $ " + String.format("%.2f", sum));
             }
     
 
